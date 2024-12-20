@@ -7,7 +7,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize)
 
     *returnSize = 2;
     x = 0;
-    int* result = malloc(2 * sizeof(int));
+    int* result = malloc(2 * sizeof(int));            // @chiki.cpp
     while(x < numsSize)
     {
         y = x + 1;
