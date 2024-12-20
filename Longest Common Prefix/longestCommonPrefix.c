@@ -7,7 +7,7 @@ char *ftind_prefix(char *s1, char *s2)
     int counter = 0;
     char *prefix;
 
-    if (!s1 || !s2)
+    if (!s1 || !s2)                                // @chiki.cpp
         return NULL;
     while (s1[counter] && s2[counter] && s1[counter] == s2[counter]) 
         counter++;
@@ -25,7 +25,7 @@ char* Helper(char** strs, int index, int strsSize)
     char* nextPrefix;
 
     if (index == strsSize - 1) 
-        return strdup(strs[index]);; 
+        return strdup(strs[index]);;                 // @chiki.cpp
 
     nextPrefix = Helper(strs, index + 1, strsSize);
     if (nextPrefix == NULL) 
@@ -42,7 +42,7 @@ char* longestCommonPrefix(char** strs, int strsSize)
 {
     if (!strs)
         return NULL;
-    if(strsSize == 0) 
+    if(strsSize == 0)                                 // @chiki.cpp
         return strdup("");
     return Helper(strs, 0, strsSize);
 }
