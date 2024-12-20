@@ -2,7 +2,7 @@ int romanNum(char x)
 {
     if (x == 'I')
         return 1;
-    else if (x == 'V')
+    else if (x == 'V')                                    // @chiki.cpp
         return 5;
     else if (x == 'X')
         return 10;
@@ -24,7 +24,7 @@ int converter(char *str, int value)
     int current_value;
     int next_value;
 
-    counter = 0;
+    counter = 0;                                        // @chiki.cpp
     if (!str[counter])
         return 0;
     while (str[counter])
